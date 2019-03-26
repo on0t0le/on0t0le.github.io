@@ -373,7 +373,8 @@ var httpOptions = {
 var TasksService = /** @class */ (function () {
     function TasksService(http) {
         this.http = http;
-        this.baseUrl = "http://localhost:5000/api";
+        //private baseUrl = "http://localhost:5000/api"
+        this.baseUrl = "https://35.211.139.206:32803/api";
     }
     TasksService.prototype.getAllTasks = function () {
         return this.http.get(this.baseUrl + '/tasks');
